@@ -1,5 +1,6 @@
-num = 10+20+30+40+ \
-50+60+70
-print(num)
-print('Tom\'s toy')
-print("Okk")
+def mypoint(str1, num1):
+    result = "My name is %-10s, point is %5d." %(str1, num1)
+    print(result)
+
+mypoint("Yamada", 75)
+mypoint("Sugiyama", 1825)
