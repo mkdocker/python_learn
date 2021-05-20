@@ -1,15 +1,10 @@
-import datetime
+test_dict_1 = {}
 
-def get_today():
+print(test_dict_1)
+print("====================")
 
-    today = datetime.datetime.today()
-    value = (today.year, today.month, today.day)
+test_dict_1["YEAR"]="2010"
+test_dict_1["MONTH"]="1"
+test_dict_1["DAY"]="20"
 
-    return value
-
-test_tuple = get_today()
-
-print(test_tuple)
-print(test_tuple[0])
-print(test_tuple[1])
-print(test_tuple[2])
+print(test_dict_1)
