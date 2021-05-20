@@ -1,9 +1,15 @@
-def mypoint(str1, num1):
-    result1 = "My name is %-10s, point is %5d." %(str1, num1)
-    print(result1)
+import datetime
 
-def tryal(alpha,beta):
-    result2 = ("名前は{myname}です。年齢は{myold}歳です。" .format(myname = alpha, myold = beta))
-    print(result2)
+def get_today():
 
-tryal("Yamada", 20)
+    today = datetime.datetime.today()
+    value = (today.year, today.month, today.day)
+
+    return value
+
+test_tuple = get_today()
+
+print(test_tuple)
+print(test_tuple[0])
+print(test_tuple[1])
+print(test_tuple[2])
