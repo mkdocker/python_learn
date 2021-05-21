@@ -1,10 +1,8 @@
-import testmod
-
-test_class_1 = testmod.TestClass()
-test_class_1.test_method('1')
+import os
 
 
-from testmod import TestClass
+PROJECT_DIR = 'C:¥python-izm'
+SETTINGS_FILE = 'settings.ini'
 
-test_class_2 = TestClass()
-test_class_2.test_method('2')
+print(os.path.join(PROJECT_DIR, SETTINGS_FILE))
+print(os.path.join(PROJECT_DIR, 'settings_dir', SETTINGS_FILE))
