@@ -1,10 +1,10 @@
-test_dict_1 = {}
+import testmod
 
-print(test_dict_1)
-print("====================")
+test_class_1 = testmod.TestClass()
+test_class_1.test_method('1')
 
-test_dict_1["YEAR"]="2010"
-test_dict_1["MONTH"]="1"
-test_dict_1["DAY"]="20"
 
-print(test_dict_1)
+from testmod import TestClass
+
+test_class_2 = TestClass()
+test_class_2.test_method('2')
