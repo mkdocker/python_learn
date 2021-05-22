@@ -1,8 +1,10 @@
-import os
+for_sample = []
+for_sample.append("python")
+for_sample.append("-")
+for_sample.append("izm")
+for_sample.append("for")
+for_sample.append("statement")
+for_sample.append("sample")
 
-
-PROJECT_DIR = 'C:¥python-izm'
-SETTINGS_FILE = 'settings.ini'
-
-print(os.path.join(PROJECT_DIR, SETTINGS_FILE))
-print(os.path.join(PROJECT_DIR, 'settings_dir', SETTINGS_FILE))
+for value in for_sample:
+    print(value)
